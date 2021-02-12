@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BhuvanConsoleApplication
+{
+    class Class8
+    {
+        static void Main(string[] args)
+        {
+            int num = 6;
+            int sum = 0;
+            int count = 0;
+            int avg = 0;
+            for (int i = 1; i <= num; i++)
+            {
+                if (num % i == 0)
+                {
+                    sum = sum + i;
+                    count++;
+
+                    Console.WriteLine(i);
+                }
+
+
+
+            }
+
+            if (count == 2)
+            {
+                Console.WriteLine("it is prime");
+            }
+            else
+            {
+                Console.WriteLine(" it is not A PRIME");
+            }
+
+            avg = sum / count;
+            Console.WriteLine(sum);
+            Console.WriteLine(count);
+            Console.WriteLine(avg);
+            
+        }
+    }
+}

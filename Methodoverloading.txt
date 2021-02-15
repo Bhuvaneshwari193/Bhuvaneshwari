@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BhuvanConsoleApplication
+{
+    class MethodOVER
+    {
+        public void sum(int num1, int num2)
+        {
+            Console.WriteLine(num1 - num2);
+        }
+        public void sum(float num1, float num2)
+        {
+            Console.WriteLine(num1 + num2);
+        }
+        static void Main(string[] args)
+        {
+
+
+
+            MethodOVER cc = new MethodOVER();
+            cc.sum(21, 32);
+            cc.sum(5.6f, 8.9f);
+
+        }
+
+    }
+}
+
+

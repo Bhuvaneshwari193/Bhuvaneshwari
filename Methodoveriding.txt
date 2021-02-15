@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BhuvanConsoleApplication
+{
+    class parent
+    {
+
+        public void Display()
+        {
+            Console.WriteLine("enter number 1 :");
+        }
+        public virtual void Show()
+        {
+            Console.WriteLine("enter number 2:");
+        }
+    }
+    class child : parent
+    {
+        public override void Show()
+        {
+            Console.WriteLine(" enter number 3");
+        }
+
+
+    }
+    class Methodoveriding
+    {
+        static void main(string[] args)
+        {
+            parent p = new parent();
+            p.Show();
+            p = new child();
+            p.Show();
+            parent s = new parent();
+            
+        }
+    }
+}

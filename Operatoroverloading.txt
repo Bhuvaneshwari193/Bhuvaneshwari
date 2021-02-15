@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BhuvanConsoleApplication
+{
+    class operover
+    {
+
+    }
+    class operoverexample
+    {
+        int num1;
+        int num2;
+        public void SetValues(int num1, int num2)
+        {
+            this.num1 = num1;
+            this.num2 = num2;
+        }
+        public void GetValues()
+        {
+            Console.WriteLine(" $ num1={num1} \t num2 = {num2} ");
+        }
+        public static operoverexample operator +(operoverexample l, operoverexample m)
+        {
+            operoverexample temp = new operoverexample();
+            temp.num1 = l.num1 + m.num1;
+            temp.num2 = l.num2 + m.num2;
+            return temp;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(" p object");
+            operoverexample p = new operoverexample();
+            p.SetValues(12, 32);
+            p.GetValues();
+            Console.WriteLine("q object");
+            operoverexample q = new operoverexample();
+            q.SetValues(89, 56);
+            q.GetValues();
+            Console.WriteLine("r object");
+            operoverexample r = new operoverexample();
+            r = p + q;
+            r.GetValues();
+
+
+        }
+
+    }
+}
+

@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class FactorsSum
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(factors(12));
+        }
+        public static int factors(int num)
+        {
+            int sum = 0;
+            int i;
+            for (i = 1; i <= num; i++)
+            {
+                if (num % i == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            return sum;
+        }
+    }
+}

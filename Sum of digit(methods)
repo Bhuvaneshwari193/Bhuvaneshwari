@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Sumofdigit
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine( DigitSum(12));
+        }
+        public static int DigitSum(int num)
+        {
+           int  Sum = 0;
+            while (num > 0)
+            {
+                int digit = num % 10;
+                Sum = Sum + digit;
+                num = num / 10;
+            }
+            return Sum;
+        }
+    }
+}

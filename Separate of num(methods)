@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Seperatedigit
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(SeperateDigit(123));
+        }
+
+        private static string SeperateDigit(int num)
+        {
+            string str = "";
+            while(num > 0)
+            {
+                str = str + num % 10 +"\n";
+                num /= 10;
+            }
+            return str;
+        }
+
+
+        //public static void SeperateDigit(int num)
+        //{
+        //    while (num > 0)
+        //    {
+        //        int digit = num % 10;
+        //        Console.WriteLine(digit);
+        //        num = num / 10;
+        //    }
+        //}
+    }
+}

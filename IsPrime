@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Prime_or_not_methods_
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(IsPrime(9));
+        }
+        private static bool IsPrime(int num)
+        {
+            int count = 0;
+            for (int i = 1; i < num; i++)
+            {
+               if(num%i==0)
+                {
+                    count++;
+                }
+            }
+
+            return count == 1;
+        }
+    }
+}

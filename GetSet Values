@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp1
+{
+    class Employee
+    {
+        public int eid { get; set; }
+        public string ename { get; set; }
+        public int esal { get; set; }
+
+        public void SetValues(int eid,string ename,int esal)
+        {
+            this.eid = eid;
+            this.ename = ename;
+            this.esal = esal;
+        }
+
+        public void ShowValues()
+        {
+            Console.WriteLine(eid);
+            Console.WriteLine(ename);
+            Console.WriteLine(esal);
+        }
+        static void Main(string[] args)
+        {
+            Employee emp = new Employee() { eid = 12, ename = "bhuvana", esal = 50000 };
+            emp.ShowValues();
+        }
+    }
+}
